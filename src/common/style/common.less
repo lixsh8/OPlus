@@ -1,0 +1,92 @@
+/*flex box */
+
+.exce-flex-wrap {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex
+}
+
+.exce-flex-item {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center
+}
+
+
+/* text ellipsis  通用样式 common*/
+
+.txt-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.txt-l {
+    text-align: left
+}
+
+.txt-r {
+    text-align: right
+}
+
+.of-hidden {
+    overflow: hidden
+}
+
+.dbline-ellipsis {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2
+}
+
+// list
+.list{
+    margin-top: 20px;
+    padding-left: 10px;
+    background: @color-bg-hd;
+
+    .list-icon{
+      display: block;
+      width: 24px;
+      height: 24px;
+    }
+    .list-item{
+      position: relative;
+      padding: 12px 35px 12px 15px;
+      background: @color-bg-hd;
+      border-bottom: 1px solid #ccc;
+    }
+    .bd{
+      margin-left: 12px;
+      overflow: hidden;
+      
+      h6{
+        line-height: 24px;
+        font-size: 17px;
+      }
+      p{
+        line-height: 20px;
+        font-size: 14px;
+      }
+    }
+    .arr{
+      display: block;
+      position: absolute;
+      top:50%;
+      right: 10px;
+      margin-top: -15px;
+      width: 30px;
+      height: 30px;
+      background: url(../../common/images/arr-r.png) no-repeat center;
+      background-size: 18px;
+    }
+  }
